@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+.topbar-container{
+    width: calc(100% - 20px);
+}
+.topbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    justify-content:space-between;
+    align-items: center;
+    background: white;
+}
+.logo .img{
+  height: 60px;
+  object-fit: contain;
+}
+.group-elements .icons img{
+    height: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-text{
+    padding-left: 2rem;
+    font-weight: 500;
+}
+.caret{
+    padding: 0.5rem;
+    font-size: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.group-elements{
+    display: flex;
+    padding-left: 1rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.icons span{
+    font-weight: bold;
+    padding-left: 2px;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cart-logo{
+    width: 100%;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    color:blue;
+}
+.login-btn{
+    width: 100%;
+    padding: 1rem;
+}
+.login-btn .btn{
+    width: 85%;
+    padding: 0.6rem;
+    border: 0.5px solid;
+    border-color: blue;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.login-text{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 235);
+}
+
+.motive{
+    display: flex;
+    min-height: 100px;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(194, 216, 255);
+    margin: 1rem;
+    margin-top: 6rem;
+    padding: 1.6rem;
+    gap: 10px;
+    border-radius: 20px;
+}
+.motive1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    text-align: center;
+    border-right: 2px solid gray;
+}
+.motive1 img,.motive2 img,.motive3 img{
+    height: 70px;
+}
+.motive-text{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.motive2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    text-align: center;
+    border-right: 2px solid gray;
+}
+.motive3{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}

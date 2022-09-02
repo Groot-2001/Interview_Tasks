@@ -1,0 +1,71 @@
+.Card-Container{
+    display: grid;
+    grid-auto-rows: minmax(max-content, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-flow: row;
+    min-width: 200px;
+    max-width: 1000px;
+    margin: 20px;
+    margin-left: 12rem;
+    gap: 10px;
+    min-width: 200px;
+    align-self: center;
+    height: max-content;
+}
+
+.card{
+   width: 100%;
+   box-shadow: rgb(170 170 170) 2px 2px 4px 0px;
+}
+#one,#two,#three,#four{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+#one{
+    background-image: url("https://ik.imagekit.io/faskf16pg/sub_category/7_2NkI3F7jEi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660136555278");;
+}
+#two{
+    background-image: url('../../assets/img/cardimg/card2img.jfif');
+   
+}
+#three{
+    background-image: url('../../assets/img/cardimg/cardimg3.jfif');
+  
+}
+#four{
+    background-image: url('../../assets/img/cardimg/cardimg4.jfif');
+}
+
+.card-text{
+    padding-left: 1rem;
+}
+
+.product-count{
+    text-align: center;
+    width: 40%;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+.whatsapp{
+    position: absolute;
+    top: 29rem;
+    right: 20px;
+    z-index: 20;
+}
+.whatsapp #icon{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

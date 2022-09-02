@@ -1,0 +1,12 @@
+
+.Home{
+    background: white;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#heading{
+    text-align: center;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: thick;
+}
+
