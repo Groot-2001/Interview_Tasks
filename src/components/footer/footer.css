@@ -45,3 +45,37 @@
     font-size: large;
     font-weight: bold;
 }
+.bottom-navbar{
+    display: none;
+}
+
+/* Mobile Screen */
+@media (max-width: 650px) {
+    .footer-container{
+        display: none;
+    }
+    .bottom-navbar{
+        display: contents;
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        background-color: white;
+        width: 97%;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: inset 1px 2px 5px grey;
+    }
+    .categories,.Offers,.Search,.Refer-Earn,.Sign-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon{
+        font-size: 1.2rem;
+    }
+    .span{
+        font-size: 14px;
+    }
+}

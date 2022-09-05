@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -7,48 +13,57 @@
     box-sizing: border-box;
 }
 .topbar-container{
-    width: calc(100% - 20px);
+    width: 100%;
 }
 .topbar{
-    position: fixed;
-    top: 0;
     display: flex;
-    width: 100vw;
-    justify-content:space-between;
-    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
     background: white;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
 }
 .logo .img{
-  height: 60px;
-  object-fit: contain;
+  order: 1;
+  height: 55px;
+  object-fit: cover;
 }
 .group-elements .icons img{
     height: 30px;
 }
 .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   order: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .content-text{
     padding-left: 2rem;
     font-weight: 500;
 }
 .caret{
+    order: 3;
     padding: 0.5rem;
     font-size: 20px;
     height: 20px;
     border-radius: 4px;
 }
 .group-elements{
-    display: flex;
-    padding-left: 1rem;
-}
-.icons{
+    order:4;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px;
+    padding-left: 2rem;
+    width: 100%;
+}
+.icons{
+    order:5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
     margin-right: 5px;
     border: 1px solid black;
     border-radius: 25px;
@@ -59,6 +74,7 @@
     padding-left: 2px;
 }
 .auth{
+    order: 7;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -75,7 +91,7 @@
     padding: 1rem;
 }
 .login-btn .btn{
-    width: 85%;
+    width: 100%;
     padding: 0.6rem;
     border: 0.5px solid;
     border-color: blue;
@@ -97,10 +113,13 @@
     justify-content: space-between;
     background: rgb(194, 216, 255);
     margin: 1rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
     padding: 1.6rem;
     gap: 10px;
     border-radius: 20px;
+}
+.help,.User-cont{
+    display: none;
 }
 .motive1{
     display: flex;
@@ -134,3 +153,102 @@
     justify-content: space-evenly;
     text-align: center;
 }
+
+/* Mobile Screen */
+@media (max-width: 650px) {
+    .topbar-container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .topbar {
+      flex-wrap: wrap;
+      width: 90%;
+      background-color: rgb(245, 245, 245);
+      position: fixed;
+      top: 0px;
+      left: 15px;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      z-index: 1000;
+      box-shadow: 3px 2px 4px 0px grey;
+    }
+    .logo .img{
+        order: 1;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .icons {
+      display: none;
+    }
+    .cart-logo {
+        display: none;
+    }
+    .auth{
+        display: none;
+    }
+    .content{
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .content-text{
+         padding-left: 2rem;
+         font-weight: 300;
+     }
+     .help,.User-cont{
+        display:contents;
+        width: 100%;
+    }
+    .question{
+        order: 3;
+        font-size: 1.6rem;
+        color: rgb(49, 49, 49);
+        width: 20%;
+    }
+    .user{
+        order: 4;
+        font-size: 1.5rem;
+        width: 10%;
+    }
+     .caret{
+         order: 3;
+         padding: 0.5rem;
+         font-size: 10px;
+         color: rgba(0, 0, 0, 0.651);
+         font-weight: 300;
+         height: 15px;
+         border-radius: 4px;
+     }
+     .motive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 92%;
+        padding: 0;
+     }
+     .motive1,.motive2{
+        display: flex;
+        justify-content: center;
+        border-right: none;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 2px solid gray;
+     }
+     .motive-text{
+        color: rgb(37, 37, 37);
+     }
+     .motive3{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+     }
+     
+  }

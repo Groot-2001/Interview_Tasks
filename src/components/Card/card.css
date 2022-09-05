@@ -20,16 +20,21 @@
 #one,#two,#three,#four{
     font-size: small;
     display: flex;
+    align-self: center;
     flex-direction: column;
+    min-width: 300px;
+    max-width: 360px;
+    min-height: 185px;
+    height: 185px;
     justify-content: space-around;
     margin: 20px;
     height: 200px;
     background-color: rgba(255, 255, 255, 0);
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
 }
 #one{
-    background-image: url("https://ik.imagekit.io/faskf16pg/sub_category/7_2NkI3F7jEi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660136555278");;
+    background-image: url("../../assets/img/cardimg/card1img.jfif");
 }
 #two{
     background-image: url('../../assets/img/cardimg/card2img.jfif');
@@ -68,4 +73,21 @@
     height: 60px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Mobile Screen */
+@media (max-width: 650px) {
+    .Card-Container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        bottom: 1rem;
+        width: 100%;
+        padding: 0;
+    }
+    .card{
+        width: 67%;
+    }
 }

@@ -11,7 +11,8 @@ import thumbsup from '../../assets/img/thumbsup.png';
 import gift from '../../assets/img/gift.png';
 import payment from '../../assets/img/payment.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartArrowDown,faAngleDown} from'@fortawesome/free-solid-svg-icons';
+import {faCartArrowDown,faAngleDown,faUser} from'@fortawesome/free-solid-svg-icons';
+import {faQuestionCircle} from '@fortawesome/free-regular-svg-icons';
 
 export default function Topbar() {
   return (
@@ -23,6 +24,12 @@ export default function Topbar() {
       <div className="content">
         <span className='content-text'>Bangalore</span>
         <FontAwesomeIcon icon={faAngleDown} className="caret"/>
+      </div>
+      <div className="help">
+        <FontAwesomeIcon icon={faQuestionCircle} className="question"/>
+      </div>
+      <div className="User-cont">
+        <FontAwesomeIcon icon={faUser} className="user"/>
       </div>
       <div className="group-elements">
           <div className="icons">
